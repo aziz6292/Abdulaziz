@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>skills of Abdulaziz</title>
     <link rel="icon" href="images/favicon.png" type="image/png" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     <link rel="stylesheet" href="css/style.css" media="all" />
     <script src="js/script.js"></script>
 
@@ -98,217 +97,210 @@
         <div class="img-div">
           <img
             class="img-main"
-            src="images/profile-transformed.png"
+            src="images/skill.avif"
             alt="Abdul Aziz"
-            style=" width: 100%; height: 440px; position: relative;right: 100px;"
+            style=" width: 100%; height: 440px; position: relative;right: 50px;"
           />
         </div>
       </section>
-      <hr />
-      <section>
-        <div class="carousel-container">
-          <div id="snaps" class="snaps">
-          <a id="snaps-1" target="_blank" href="#">
-            <img class="preload" src="images/photo8.jpg" alt="Me in college" />
-          </a>
-          <a id="snaps-2" target="_blank" href="#">
-            <img class="preload" src="images/photo9.jpg" alt="My college" />
-          </a>
-          <a id="snaps-3" target="_blank" href="#">
-            <img class="preload" src="images/photo3.jpg" alt="My University" />
-          </a>
-          <a id="snaps-4" target="_blank" href="#">
-            <img class="preload" src="images/photo4.jpg" alt="My workspace" />
-          </a>
-          <a id="snaps-5" target="_blank" href="#">
-            <img class="preload" src="images/photo6.jpg" alt="Game time" />
-          </a>
-          <a id="snaps-6" target="_blank" href="#">
-            <img
-              class="preload"
-              src="images/photo7.jpg"
-              alt="rain in University"
-            />
-          </a>
-          <a id="snaps-7" target="_blank" href="#">
-            <img class="preload" src="images/photo1.jpg" alt="Me in college" />
-          </a>
-          <a id="snaps-8" target="_blank" href="#">
-            <img class="preload" src="images/photo2.jpg" alt="My college" />
-          </a>
-          <a id="snaps-9" target="_blank" href="#">
-            <img
-              class="preload"
-              src="images/photo10.jpg"
-              alt="My University"
-            />
-          </a>
-          <a id="snaps-10" target="_blank" href="#">
-            <img class="preload" src="images/photo11.jpg" alt="My workspace" />
-          </a>
-          <a id="snaps-11" target="_blank" href="#">
-            <img class="preload" src="images/photo12.jpg" alt="Game time" />
-          </a>
-        </div>
-          <!-- Add more carousel images as needed -->
-        </div>
-      </section>
-      <section class="dark">
-        <div class="front-end">
-          <h2>Front-end</h2>
-          <ul class="ul">
-            <li>Front-end development</li>
-            <li>HTML / CSS</li>
-            <li>Bootstrap</li>
-            <li>JavaScript (kinda)</li>
-            <li>Swearing at my computer</li>
-          </ul>
-        </div>
-        <div class="img-developer">
-          <img
-            class="img-dev"
-            src="images/front-end-back-end.png"
-            alt="part Back End Developer, part Front End Developer"
-          />
-        </div>
-        <div class="back-end">
-          <h2>Back-end</h2>
-          <ul class="ul">
-            <li>Backend-end development</li>
-            <li>C / C++</li>
-            <li>Python (Flask)</li>
-            <li>SQL / MySQL</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-      </section>
+      <section class="dark" style="display: flex; flex-direction: column;">
+        <section class="skill">
+            <div class="left">
+                <h2>Web & iOS Development</h2>
+                <ul>
+                    <li>Designing</li>
+                    <li>Front-End</li>
+                    <li>Back-End</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="webDevChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        <!-- Repeat the same structure for other skill sections -->
+        <section class="skill">
+            <div class="left">
+                <h2>Problem Solving</h2>
+                <ul>
+                    <li>Time Complexity</li>
+                    <li>Space Complexity</li>
+                    <li>Completeness</li>
+                    <li>Accuracy</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="problemSolvingChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Data Structures & Algorithms</h2>
+                <ul>
+                    <li>Problem Solving with Ease</li>
+                    <li>Efficient Logics</li>
+                    <li>Data Organization </li>
+                    <li>Algorithm Design</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="dsAndAlgoChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Object-Oriented Programming</h2>
+                <ul>
+                    <li>Encapsulation</li>
+                    <li>Abstraction</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="oopChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        
+        <section class="skill">
+            <div class="left">
+                <h2>Creative Thinking</h2>
+                <ul>
+                    <li>New Ideas</li>
+                    <li>Complex to Simple</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="creativeThinkingChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Machine Learning</h2>
+                <ul>
+                    <li>Regression</li>
+                    <li>Classification</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="machineLearningChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Artificial Intelligence</h2>
+                <ul>
+                    <li>Game Development</li>
+                    <li>Algorithm Analysis Skills</li>
+                    <li>AI Algorithm Implementation</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="aiChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Compiler Construction</h2>
+                <ul>
+                    <li>Automata</li>
+                    <li>Construction of Logic</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="compilerConstructionChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Computer Vision</h2>
+                <ul>
+                    <li>Image Processing</li>
+                    <li>Convolution</li>
+                    <li>Neural Networks</li>
+                </ul>
+            </div>
+            <div class="right">
+                <canvas id="computerVisionChart" width="500" height="200"></canvas>
+            </div>
+        </section>
+    </section>
+    <section class="story" style="flex-direction: column;">
+        <section class="skill">
+            <div class="left">
+                <h2>Web Technologies</h2>
+            </div>
+            <div class="right">
+                <canvas id="WebTechChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Programming Languages</h2>
+            </div>
+            <div class="right">
+                <canvas id="programmingLanguagesChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    
+        <section class="skill">
+            <div class="left">
+                <h2>Web Frameworks</h2>
+            </div>
+            <div class="right">
+                <canvas id="webFrameworksChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    
+        <section class="skill">
+            <div class="left">
+                <h2>Databases</h2>
+            </div>
+            <div class="right">
+                <canvas id="databasesChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="left">
+                <h2>Software Tools</h2>
+            </div>
+            <div class="right">
+                <canvas id="toolsChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    </section>
+</div>
+    
+  
 
-      <section class="random">
-        <div id="img-1" class="img-random">
-          <img
-            class="img-rand"
-            src="images/facts.jpg"
-            alt="facts & dreams"
-          />
-        </div>
-        <div class="text-random">
-          <h2>Random facts</h2>
-          <ul class="ul">
-            <li>I drink a lot of tea</li>
-            <li>I'm naturally programmer</li>
-            <li>Playing is my zen time</li>
-            <li>I love to cook (and eat)</li>
-            <li>I'm a bit of a clean freak</li>
-            <li>I want to live in Mecca</li>
-            <li>
-              I'm slightly addicted to
-              <a href="#" target="_blank">FB</a>
-            </li>
-            <li>I love my Lord immensely</li>
-          </ul>
-        </div>
-      </section>
 
-      <section class="feature-section">
-        <div class="feature">
-          <h2>Featured here & there</h2>
-          <p>
-            I've been lucky enough to have my work featured in projects, blogs
-            and websites around the world. I've also participated in various
-            coding competitions and enjoy sharing my love of coding on social
-            media.
-          </p>
-          <p>
-            <a class="transition" href="/featured">View featured work</a>
-          </p>
-        </div>
-        <div class="feature-imgs">
-          <div id="img-2" class="certificate">
-            <a class="transition" href="#">
-              <img
-                class="certificate-image1"
-                src="images/certificate.jpg"
-                alt="featured in books, magazines and websites"
-                width="300px"
-                height="200px"
-              />
-            </a>
-            <a class="transition" href="#">
-              <img
-                class="certificate-image4"
-                src="images/coding_abdulaziz_certificate.jpeg"
-                alt="featured in books, magazines and websites"
-                width="300px"
-                height="200px"
-              />
-            </a>
-            <a class="transition" href="#">
-              <img
-                class="certificate-image2"
-                src="images/uts.png"
-                alt="featured in books, magazines and websites"
-                width="300px"
-                height="200px"
-              />
-            </a>
-            <a class="transition" href="#">
-              <img
-                class="certificate-image3"
-                src="images/devtown.png"
-                alt="featured in books, magazines and websites"
-                width="300px"
-                height="200px"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
 
-      <section class="story">
-        <div class="story-img">
-          <a class="transition" href="#">
-            <img
-              class="story-inner-img"
-              src="images/photo4.jpg"
-              alt="Abdul Aziz workspace"
-            />
-          </a>
-        </div>
-        <div class="story-text">
-          <h2>My story</h2>
-          <p>
-            Learn a little bit more about me, how I got into development, and
-            how I built my career as a Web & iOS developer. I’ve included key
-            things I've learned, book recommendations, and even some sneak peeks
-            of the first websites I created.
-          </p>
-          <p>
-            <a class="transition" href="#">Read my story</a>
-          </p>
-        </div>
-      </section>
+   
+    
+<div id="content-wrapper">
+<footer id="footer" role="contentinfo">
+  <div class="row">
+    <div class="col-12">
+      <div class="left">
+        <a class="transition" href="#">&copy; 2023 Abdul Aziz</a>
+      </div>
+      <nav id="nav-footer">
+        <ul>
+      <li class="about"><a href="about.html">about</a></li>
+      <li class="portfolio"><a href="portfolio.html">portfolio</a></li>
+      <li class="skill"><a href="skill.html">skill</a></li>
+      <li class="project"><a href="project.html">project</a></li>
+      <li class="contact"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div id="content-wrapper"></div>
-    <footer id="footer" role="contentinfo">
-      <div class="row">
-        <div class="col-12">
-          <div class="left">
-            <a class="transition" href="#">&copy; 2023 Abdul Aziz</a>
-          </div>
-          <nav id="nav-footer">
-            <ul>
-          <li class="about"><a href="about.html">about</a></li>
-          <li class="portfolio"><a href="portfolio.html">portfolio</a></li>
-          <li class="skill"><a href="skill.html">skill</a></li>
-          <li class="project"><a href="project.html">project</a></li>
-          <li class="contact"><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="gradient-white">
-        <a class="top" href="#">Back to top</a>
-      </div>
-    </footer>
-  </body>
+  </div>
+  <div class="gradient-white">
+    <a class="top" href="#">Back to top</a>
+  </div>
+</footer>
+</div>
+</body>
 </html>
+
+
+
