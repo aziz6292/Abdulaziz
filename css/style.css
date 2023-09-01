@@ -1140,14 +1140,14 @@ section.story {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.feature{
+.projects .feature{
   display: flex;
   margin: 20px;
   padding: 20px;
   width: 100%;
   overflow-x: scroll;
 }
-.feature-imgs
+.projects .feature-imgs
 {
   width: 250px;
   height: 170px;
@@ -1160,7 +1160,7 @@ section.story {
   transition: transform 10s linear;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
 }
-.feature-imgs:hover{
+.projects .feature-imgs:hover{
   width: 300px;
   height: 200px;
 }
