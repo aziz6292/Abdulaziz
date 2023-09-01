@@ -1,3 +1,43 @@
+//portfolio.js
+function setupImageFading(thumbnailIndex) {
+  const images = document.querySelectorAll(`.thumbs li:nth-child(${thumbnailIndex}) .image-container img`);
+  let currentIndex = 0;
+
+  function fadeInNextImage() {
+    images[currentIndex].style.opacity = '1';
+    currentIndex = (currentIndex + 1) % images.length;
+
+    setTimeout(() => {
+      fadeOutCurrentImage();
+    }, 10000); // Display time
+  }
+
+  function fadeOutCurrentImage() {
+    images[currentIndex - 1 >= 0 ? currentIndex - 1 : images.length - 1].style.opacity = '0';
+
+    setTimeout(() => {
+      fadeInNextImage();
+    }, 0); // Transition time
+  }
+
+  fadeInNextImage();
+}
+
+// Apply the fading effect to each thumbnail's images
+const thumbnails = document.querySelectorAll('.thumbs li');
+thumbnails.forEach((thumbnail, index) => {
+  setupImageFading(index + 1); // Indices are 1-based
+});
+//end portfolio.js
+
+
+
+
+
+
+
+
+//skill.js
 document.addEventListener("DOMContentLoaded", function () {
   // Skill data and labels
   const WEbTechnologiesData = [85, 80, 75, 70, 65];
@@ -181,3 +221,62 @@ document.addEventListener("DOMContentLoaded", function () {
     skillLabels[8]
   );
 });
+//end skill.js
+
+//project
+// Create a function to initialize a carousel
+function initCarousel(cardsContainer) {
+  const cards = cardsContainer.querySelectorAll('.card');
+
+  let angle = 0;
+  let isHovered = false;
+
+  function rotateCarousel(angle) {
+      if (!isHovered) {
+          cardsContainer.style.transform = `translateZ(-200px) rotateY(${angle}deg)`;
+      }
+  }
+
+  cards.forEach((card, index) => {
+      card.style.transform = `rotateY(${index * 360 / cards.length}deg) translateZ(200px)`;
+      card.addEventListener('mouseenter', () => {
+          isHovered = true;
+          card.style.transform = 'translateZ(200px) scale(1.2)';
+          cards.forEach((otherCard, otherIndex) => {
+              if (otherIndex !== index) {
+                  otherCard.style.transition = 'none';
+                  otherCard.style.opacity = '0';
+              }
+          });
+      });
+      card.addEventListener('mouseleave', () => {
+          isHovered = false;
+          card.style.transition = '';
+          card.style.transform = `rotateY(${index * 360 / cards.length}deg) translateZ(200px)`;
+          cards.forEach((otherCard) => {
+              otherCard.style.opacity = '1';
+          });
+          rotateCarousel(angle);
+      });
+  });
+
+  document.addEventListener('keydown', (event) => {
+      if (!isHovered) {
+          if (event.key === 'ArrowLeft') {
+              angle += 60;
+              rotateCarousel(angle);
+          } else if (event.key === 'ArrowRight') {
+              angle -= 60;
+              rotateCarousel(angle);
+          }
+      }
+  });
+}
+
+// Initialize each carousel on the page
+const allCarousels = document.querySelectorAll('.cards-container');
+allCarousels.forEach(initCarousel);
+
+
+
+//end project
