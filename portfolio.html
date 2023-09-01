@@ -8,7 +8,7 @@
     <link rel="icon" href="images/favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="css/style.css" media="all" />
-    <script src="js/script.js"></script>
+    
 
     <!-- Include Font Awesome CSS -->
     <script
@@ -24,7 +24,7 @@
         </div>
         <ul class="nav-links">
           <div class="logo">
-            <a href="/" class="logo-link">
+            <a href="#" class="logo-link">
               <img
                 src="images/logo.png"
                 height="80px"
@@ -35,7 +35,7 @@
             </a>
           </div>
           <li class="about"><a href="about.html">about</a></li>
-          <li class="portfolio"><a href="portfolio.html">portfolio</a></li>
+          <li class="portfolio"><a style="color: rgb(194, 194, 188);" href="#">portfolio</a></li>
           <li class="skill"><a href="skill.html">skill</a></li>
           <li class="project"><a href="project.html">project</a></li>
           <li class="contact"><a href="contact.html">contact</a></li>
@@ -85,21 +85,22 @@
 
     <div class="content about clearfix">
       <section class="main"  style="background: none;">
-        <div class="text-div">
+        <div class="text-div" style="margin-top: 100px;">
           <h1>portfolio.</h1>
           <p class="intro">
-            Check out some of my latest Web/iOS applications case studies.
+            Check out some of my latest Web & iOS applications case studies.
           </p>
           <p class="description">
             I've worked at start-ups, tech companies and corporate on a range
             of different projects, including develop systems, websites and apps.
           </p>
         </div>
-        <div class="img-div">
+        <div class="img-div" style="width: 60%" >
           <img
             class="img-main"
             src="images/portfolio.jpg"
             alt="Abdul Aziz"
+            style="width: 100%;"
           />
         </div>
       </section>
@@ -382,7 +383,7 @@
           <nav id="nav-footer">
             <ul>
               <li class="about"><a href="about.html">about</a></li>
-              <li class="portfolio"><a href="portfolio.html">portfolio</a></li>
+              <li class="portfolio"><a href="#">portfolio</a></li>
               <li class="skill"><a href="skill.html">skill</a></li>
               <li class="project"><a href="project.html">project</a></li>
               <li class="contact"><a href="contact.html">contact</a></li>
@@ -394,37 +395,6 @@
         <a class="top" href="#">Back to top</a>
       </div>
     </footer>
-    <script>
-      function setupImageFading(thumbnailIndex) {
-        const images = document.querySelectorAll(`.thumbs li:nth-child(${thumbnailIndex}) .image-container img`);
-        let currentIndex = 0;
-    
-        function fadeInNextImage() {
-          images[currentIndex].style.opacity = '1';
-          currentIndex = (currentIndex + 1) % images.length;
-    
-          setTimeout(() => {
-            fadeOutCurrentImage();
-          }, 10000); // Display time
-        }
-    
-        function fadeOutCurrentImage() {
-          images[currentIndex - 1 >= 0 ? currentIndex - 1 : images.length - 1].style.opacity = '0';
-    
-          setTimeout(() => {
-            fadeInNextImage();
-          }, 0); // Transition time
-        }
-    
-        fadeInNextImage();
-      }
-    
-      // Apply the fading effect to each thumbnail's images
-      const thumbnails = document.querySelectorAll('.thumbs li');
-      thumbnails.forEach((thumbnail, index) => {
-        setupImageFading(index + 1); // Indices are 1-based
-      });
-    </script>
-    
+    <script src="js/script.js"></script>
   </body>
 </html>
