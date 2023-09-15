@@ -84,6 +84,8 @@ section {
 }
 
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #ffffff;
   font-size: 62.5%;
@@ -92,10 +94,13 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: transparent;
+  height: 100%;
+  background-color: white;
   font-size: 18px;
   font-size: 1.8rem;
   color: #333333;
@@ -104,6 +109,8 @@ body {
 
 /* Header styling */
 header {
+  max-width: 100%;
+  overflow-x: hidden;
   background: #222222;
   color: #fff;
   padding: 30px;
@@ -241,8 +248,17 @@ header .menu-icon {
   /* Hide the menu icon by default on larger screens */
 }
 
+
+
+
+
+
+
+
+
 /* Footer styling */
 footer {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,8 +339,25 @@ footer a:hover {
   color: #333333;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
-h tages section
+ All Pages
 */
 h1,
 .h1,
@@ -366,9 +399,6 @@ h3.small,
   font-size: 2rem;
 }
 
-/*
-p tag section
-*/
 
 p {
   margin-bottom: 2.4rem;
@@ -437,11 +467,32 @@ a:active {
 }
 section {
   max-width: 100%;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+ul.ul,
+ol.ol {
+  list-style-type: disc;
+  margin-bottom: 3.2rem;
+  line-height: 1.5;
+  list-style: none;
+}
+ul.ul li,
+ol.ol li {
+  margin-bottom: 0.8rem;
+}
 
+
+
+
+
+
+
+
+
+/* about index pages */
 section.main {
   -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -462,6 +513,8 @@ section.main {
   width: 85%;
   overflow: hidden;
   margin-bottom: 100px;
+  padding: 5px;
+  
 }
 
 .snaps {
@@ -486,6 +539,7 @@ section.main {
   transform: translateX(0);
   transition: transform 10s linear;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+
 }
 
 .preload:hover {
@@ -513,17 +567,7 @@ hr {
   bottom: 40px;
 }
 
-ul.ul,
-ol.ol {
-  list-style-type: disc;
-  margin-bottom: 3.2rem;
-  line-height: 1.5;
-  list-style: none;
-}
-ul.ul li,
-ol.ol li {
-  margin-bottom: 0.8rem;
-}
+
 
 section.dark {
   margin: auto;
@@ -644,7 +688,19 @@ section.story {
   margin-right: 100px;
 }
 
-/* Social Disc Icons */
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact Page */
 .social-disc {
   list-style-type: none;
   padding-top: 3.2rem;
@@ -938,6 +994,18 @@ section.story {
   margin: 130px auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*Portfolio Page*/
+
 #thumbs {
   display: grid;
   grid-template-columns: repeat(
@@ -1010,8 +1078,6 @@ section.story {
 }
 
 
-
-
 .image-container img {
   background: rgba(0, 0, 0, 0.676);
   position: absolute;
@@ -1025,6 +1091,16 @@ section.story {
 
 
 
+
+
+
+
+
+
+
+
+
+/* Skill page  */
     
 .content .skill {
     display: flex;
@@ -1063,6 +1139,10 @@ section.story {
     color: #666;
     display: none;
 }
+
+
+
+
 
 
 /* Project Page */
@@ -1166,3 +1246,9 @@ section.story {
 }
 
 
+
+
+
+/* Mobile  Styling*/
+/* header */
+/* Styles for mobile menu */
