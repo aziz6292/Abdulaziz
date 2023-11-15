@@ -118,7 +118,9 @@ header {
   justify-content: space-between; /* Align items horizontally */
   align-items: center; /* Center items vertically */
 }
-
+.manuBar{
+  display: none;
+}
 /* Add this CSS to your existing styles */
 /* Logo container styles */
 .logo {
@@ -127,7 +129,10 @@ header {
   top: 10px;
   left: 135px;
 }
-
+.inner-logo-pic{
+  height: 80px;
+  width: 80px;
+}
 .logo-link:hover .inner-logo-pic {
   transform: scale(1.1);
 }
@@ -1252,3 +1257,170 @@ section.story {
 /* Mobile  Styling*/
 /* header */
 /* Styles for mobile menu */
+/* Mobile Styling */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .manuBar {
+    display: block;
+    cursor: pointer;
+  }
+  .logo{
+    position: absolute;
+    left: 100px;
+    size-adjust: 100%;
+  }
+
+  .inner-logo-pic {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .nav-links{
+    margin: 0;
+    padding-left: 50px;
+    display: none; /* Hide the menu items by default */
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: .1px;
+    background-color: #333;
+
+  }
+  
+  .nav-links.show {
+    display: block;
+  }
+  .nav-links:hover{
+    color: white;
+  }
+
+  .nav-links li {
+    display: block;
+    text-align: center;
+    
+  }
+ 
+  header nav a:hover,
+.nav-links.show a {
+  color: #fff;
+}
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+  }
+ .transition{
+  position: relative;
+  left: 50%;
+  right: 50%;
+ }
+ #nav-footer{
+  display: none;
+ }
+ h1, .h1{
+  font-size: 55px;
+  color: #333
+ }
+ p.intro{
+  font-size: 15px;
+  line-height: 20px;
+  color: #777;
+  font-weight: normal;
+ }
+ p{
+  font-size: 12px;
+ }
+ h2,.h2{
+  font-size: 24px;
+  font-weight: normal;
+
+ }
+ h3, .h3{
+  font-size: 20px;
+  font-weight: normal;
+ }
+ li,.li{
+  font-size: 12px;
+ }
+ section {
+  display: block;
+  margin: 0;
+ }
+ .flex-container{
+   display: block;
+
+ }
+ .left-column{
+  padding: 0;
+}
+
+.right-column {
+  padding: 0;
+}
+.submit {
+  font-size: 12px;
+  font-weight: normal;
+  width: 75px; /* Adjust the width as needed */
+  height: 25px; /* Adjust the height as needed */
+}
+
+.img-div {
+  width: 80%;
+  margin: 40px;
+}
+.text-div {
+  width: 80%;
+  margin: 40px;
+}
+
+.projects{
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: calc(100% - 40px);
+  align-items: center;
+}
+#thumbs{
+  display: block;
+  position: relative;
+  right: 120px;
+}
+#thumbs li{
+  margin-bottom: 20px;
+}
+.upper{
+  display: block;
+}
+
+.cards-container {
+  width: 100px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+}
+.carousel {
+  margin:100px;
+}
+.cards-container:hover {
+  width: 200px; /* Adjust as needed */
+  height: 160px; /* Adjust as needed */
+}
+.projects .feature-imgs
+{
+  width: 100px;
+  height: 80px;
+
+}
+.projects .feature-imgs:hover{
+  width: 150px;
+  height: 100px;
+}
+
+}
+
+
+
