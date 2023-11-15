@@ -277,6 +277,10 @@ function initCarousel(cardsContainer) {
 const allCarousels = document.querySelectorAll('.cards-container');
 allCarousels.forEach(initCarousel);
 
+
+
+
+//Mobile view for header 
 document.addEventListener('DOMContentLoaded', function () {
   var manuBar = document.querySelector('.manuBar');
   var navLinks = document.querySelector('.nav-links');
@@ -288,4 +292,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+
+
 //end project
+
+
+
