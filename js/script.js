@@ -277,6 +277,15 @@ function initCarousel(cardsContainer) {
 const allCarousels = document.querySelectorAll('.cards-container');
 allCarousels.forEach(initCarousel);
 
+document.addEventListener('DOMContentLoaded', function () {
+  var manuBar = document.querySelector('.manuBar');
+  var navLinks = document.querySelector('.nav-links');
+
+  manuBar.addEventListener('click', function () {
+    console.log('ManuBar clicked'); // Check if this log appears in the console
+    navLinks.classList.toggle('show');
+  });
+});
 
 
 //end project
