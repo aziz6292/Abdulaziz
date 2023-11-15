@@ -759,8 +759,10 @@ section.story {
   margin: 100px;
 }
 .img-contact {
+  width: 100%;  
   position: relative;
   top: 75px;
+  bottom: 100px;
 }
 
 /* Form Styles */
@@ -1318,8 +1320,11 @@ section.story {
   }
  .transition{
   position: relative;
-  left: 50%;
-  right: 50%;
+  top: 50px;
+  left: 60px;
+ }
+ #footer .left{
+  width : 200px;
  }
  #nav-footer{
   display: none;
@@ -1353,16 +1358,58 @@ section.story {
   display: block;
   margin: 0;
  }
+ section.dark{
+   padding: auto;
+ }
  .flex-container{
    display: block;
+   margin: 0px;
 
  }
+ .col-12{
+  padding: 0px;
+  width: 220px;
+  position: relative;
+  right: 70px;
+ }
  .left-column{
-  padding: 0;
+  padding: 0px;
+  width: 220px;
+  position: relative;
+  right: 70px;
 }
 
 .right-column {
   padding: 0;
+  width: 220px;
+  position: relative;
+  right: 70px;
+}
+
+.contact-text {
+  max-width: 100%;
+  max-height: 100%;
+  width: 50%;
+  margin: 20px 100px;
+}
+.img-contact {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
+  position: relative;
+  right: 20px;
+  
+}
+.social-disc{
+  margin: 0;
+}
+.social-disc li {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
 }
 .submit {
   font-size: 12px;
@@ -1389,7 +1436,7 @@ section.story {
 #thumbs{
   display: block;
   position: relative;
-  right: 120px;
+  right: 50px;
 }
 #thumbs li{
   margin-bottom: 20px;
@@ -1399,14 +1446,17 @@ section.story {
 }
 
 .cards-container {
-  width: 100px; /* Adjust as needed */
-  height: 80px; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  position: relative;
+  left: 50px;
 }
 .carousel {
-  margin:100px;
+  width: 80%;
+  margin: 20px 0;
 }
 .cards-container:hover {
-  width: 200px; /* Adjust as needed */
+  width: 220px; /* Adjust as needed */
   height: 160px; /* Adjust as needed */
 }
 .projects .feature-imgs
