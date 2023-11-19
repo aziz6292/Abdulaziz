@@ -1257,10 +1257,10 @@ section.story {
 
 
 /* Mobile  Styling*/
-/* header */
 /* Styles for mobile menu */
 /* Mobile Styling */
 @media only screen and (max-width: 768px) {
+  /* header */
   header {
     padding: 15px;
     display: flex;
@@ -1318,17 +1318,221 @@ section.story {
     padding: 10px;
     display: block;
   }
- .transition{
-  position: relative;
-  top: 50px;
-  left: 60px;
- }
+ /* header end*/
+
+
+
+ /* footer */
  #footer .left{
-  width : 200px;
+  width: 200px;
+  align-items: center;
+  text-align: center;
  }
  #nav-footer{
   display: none;
+  
  }
+ .transition{
+  position: relative;
+  top: 50px;
+  right: 60px;
+
+ }
+ /* footer end */
+
+ /* about */
+/* about index pages */
+
+
+.snaps {
+  display: flex;
+  animation: moveCarousel 30s linear infinite;
+  align-items: center;
+  margin: 50px auto auto auto;
+}
+
+.snaps:hover {
+  animation-play-state: paused; /* Pauses the animation on hover */
+}
+
+.preload {
+  width: 100px;
+  height: 150px;
+  border-width: 5px;
+  border-color: #f1eeee;
+  border-style: solid;
+  border-radius: 5%;
+  margin-left: 5px;
+  transform: translateX(0);
+  transition: transform 10s linear;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+
+}
+
+.preload:hover {
+  width: 300px;
+  height: 200px;
+  transform: translateX(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 10);
+}
+
+@keyframes moveCarousel {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+}
+
+
+hr {
+  width: 85%;
+  border-top: solid;
+  border-width: 1px;
+  position: relative;
+  bottom: 40px;
+}
+
+
+
+section.dark {
+  margin: auto;
+  background: #fafafa;
+ 
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.img-developer {
+  width: 30%;
+  position: relative;
+  top: 90px;
+}
+.img-dev {
+  width: 400px;
+  height: 270px;
+}
+.front-end {
+  width: 30%;
+  position: relative;
+  top: 90px;
+  left: 50px;
+
+}
+.back-end {
+  width: 30%;
+  position: relative;
+  bottom: 395px;
+  left: 120px;
+}
+
+section.light {
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.random {
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.img-random {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  right: 20px;
+}
+.img-rand {
+  width: 100%;
+  border-radius: 5%;
+  rotate: -5deg;
+  float: left;
+}
+
+.text-random {
+  width: 100%;
+  position: relative;
+  left: 130px;
+}
+
+.transition img {
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  border: solid 1px;
+  border-color: #33333337;
+}
+.transition .certificate-image1 {
+  rotate: 0deg;
+  position: relative;
+  top: 30px;
+}
+.transition .certificate-image2 {
+  position: relative;
+  left: 30px;
+  bottom: 60px;
+  rotate: 0deg;
+}
+.transition .certificate-image4 {
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+  rotate: 0deg;
+}
+.transition .certificate-image3 {
+  position: relative;
+  bottom: 100px;
+  rotate: 0deg;
+}
+.feature-section {
+  padding: 20px 0;
+  margin: auto;
+  overflow: hidden;
+  background: #fafafa;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.feature {
+ align-items: center;
+ margin-left: 20px;
+ width: 70%;
+}
+.feature-imgs {
+  margin :0;
+  position: relative;
+  right: -80px;
+  width: 100%;
+}
+
+.story{
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+.story-img {
+  width: 50%;
+  margin-left: 50px;
+}
+.story-text {
+  width: 50%;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  top: 60px;
+  right: 50px;
+}
+
+.story-inner-img {
+  width :300px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+
+}
+/* about end */
+
  h1, .h1{
   font-size: 55px;
   color: #333
@@ -1368,22 +1572,22 @@ section.story {
  }
  .col-12{
   padding: 0px;
-  width: 220px;
+  width: 80%;
   position: relative;
-  right: 70px;
+  left: 30px;
  }
  .left-column{
   padding: 0px;
-  width: 220px;
+  width: 80%;
   position: relative;
-  right: 70px;
+  left: 30px;
 }
 
 .right-column {
   padding: 0;
-  width: 220px;
+  width: 80%;
   position: relative;
-  right: 70px;
+  left: 30px;
 }
 
 .contact-text {
@@ -1401,21 +1605,22 @@ section.story {
   
 }
 .social-disc{
-  margin: 0;
+  display: flex;
+  flex-direction: row;
+
+  
 }
 .social-disc li {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
+  margin: 25x 0;
   align-items: center;
   justify-content: center;
-  margin-left: 30%;
 }
+
 .submit {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
-  width: 75px; /* Adjust the width as needed */
-  height: 25px; /* Adjust the height as needed */
+  width: 100px; /* Adjust the width as needed */
+  height: 33px; /* Adjust the height as needed */
 }
 
 .img-div {
@@ -1436,10 +1641,13 @@ section.story {
 #thumbs{
   display: block;
   position: relative;
-  right: 50px;
+  left: 80px;
+  
 }
 #thumbs li{
-  margin-bottom: 20px;
+  position: relative;
+  right: 100px;
+  margin: 20px;
 }
 .upper{
   display: block;
@@ -1469,6 +1677,68 @@ section.story {
   width: 150px;
   height: 100px;
 }
+
+
+
+/* Skill page  */
+
+section.dark{
+  display: block;
+  padding: 0;
+  
+}
+#content-detail .row{
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+section.story {
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin-bottom: 100px;
+
+}
+.content .skill {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  padding-bottom: 20px;
+  width: 100%;
+  border-bottom: solid;
+  border-width: 1px;
+
+}
+
+.skill .left {
+  flex: auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  
+}
+
+.skill .right {
+  flex:auto;
+  width: 100%;
+}
+
+.skill h2 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.skill ul {
+  list-style: none;
+}
+
+.skill li {
+  color: #666;
+  display: none;
+}
+
 
 }
 
