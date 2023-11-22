@@ -286,10 +286,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var navLinks = document.querySelector('.nav-links');
 
   manuBar.addEventListener('click', function () {
-    console.log('ManuBar clicked'); // Check if this log appears in the console
+    console.log('ManuBar clicked');
     navLinks.classList.toggle('show');
   });
 });
+
 
 
 
