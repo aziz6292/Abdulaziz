@@ -1531,7 +1531,7 @@ section.dark {
 .back-end {
   width: 50%;
   position: relative;
-  bottom: 525px;
+  bottom: 510px;
   left: 70px;
   margin-bottom: 0px;
 }
@@ -1686,7 +1686,7 @@ section.light {
  }
  
  ul.ul,ol.ol{
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
   line-height: 1.5;
  }
  ul.ul li,ol.ol li{
