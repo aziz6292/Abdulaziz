@@ -1030,7 +1030,16 @@ section.story {
   flex-direction: column;
   margin: 130px auto;
 }
+.whatsapp-contact {
+  margin-top: 40px;
+}
 
+
+.whatsapp-contact a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 
 
