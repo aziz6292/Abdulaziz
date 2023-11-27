@@ -598,33 +598,45 @@ section.dark {
   -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
-section.front-back{
+
+section.developer{
   margin: auto;
   background: #fafafa;
   padding: 10rem 15rem;
   -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.img-developer {
-  width: 30%;
+.app{
+  display: flex;
+  margin-top: 50px;
+}
+
+.web{
+  display: flex;
+  margin-bottom: 50px;
+}
+.web-text{
   margin-right: 50px;
-
 }
+
+.app-img{
+  margin-right: 100px;
+}
+
+
+
+
 
 .img-dev {
+  margin-top: 50px;
   width: 400px;
   height: 270px;
 }
-.front-end {
-  width: 30%;
-  margin-right: 100px;
-}
-.back-end {
-  width: 30%;
-  margin-left: 150px;
-}
+
 
 section.light {
   -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -1589,36 +1601,44 @@ section.dark {
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-.img-developer {
-  width: 30%;
-  position: relative;
-  top: 90px;
-  margin-bottom: 0px;
-}
-.img-dev {
-  width: 300%;
-  height: 270px;
-  margin: 20px;
-  margin-bottom: 0px;
-}
-.front-end {
-  width: 50%;
-  position: relative;
-  top: 90px;
-  margin-bottom: 0px;
 
+
+section.developer{
+  margin: auto;
+  background: #fafafa;
+  padding:0;
+  padding-top: 4rem;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  display: block;
 }
-.back-end {
-  width: 50%;
-  position: relative;
-  bottom: 510px;
-  left: 0px;
-  margin-left: 50%;
+
+.app{
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 50px 20px;
+  margin-bottom: 100px;
+}
+
+.web{
+  display: block;
+  margin: 50px 20px;
   margin-bottom: 0px;
 }
-section.front-back{
-  height: 800px;
-  padding: 0;
+.web-text{
+  margin-right: 0px;
+}
+
+.app-img{
+  margin-right: 0px;
+}
+.app-inner-img{
+  width: 80%;
+}
+.img-dev{
+  width: 320px;
+  padding-top: 40px;
 }
 
 section.light {
@@ -2010,6 +2030,10 @@ section.story {
 
 }
 
+section.skill{
+  width : 90%;
+  margin-right: 20px;
+}
 .skill .left {
   flex: auto;
   text-align: center;
